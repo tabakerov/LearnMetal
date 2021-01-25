@@ -13,6 +13,9 @@
 		C79ADBAE25BEEF7000B93D6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79ADBAC25BEEF7000B93D6A /* Main.storyboard */; };
 		C79ADBBA25BEEF7000B93D6A /* firstMetalAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79ADBB925BEEF7000B93D6A /* firstMetalAppTests.swift */; };
 		C79ADBC525BEEF7000B93D6A /* firstMetalAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79ADBC425BEEF7000B93D6A /* firstMetalAppUITests.swift */; };
+		C79ADBD325BEF0A300B93D6A /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79ADBD225BEF0A300B93D6A /* Renderer.swift */; };
+		C79ADBD725BEF81B00B93D6A /* Primitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79ADBD625BEF81B00B93D6A /* Primitive.swift */; };
+		C79ADBD925BEFD2600B93D6A /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = C79ADBD825BEFD2600B93D6A /* Shaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		C79ADBC025BEEF7000B93D6A /* firstMetalAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firstMetalAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79ADBC425BEEF7000B93D6A /* firstMetalAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstMetalAppUITests.swift; sourceTree = "<group>"; };
 		C79ADBC625BEEF7000B93D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C79ADBD225BEF0A300B93D6A /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		C79ADBD625BEF81B00B93D6A /* Primitive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Primitive.swift; sourceTree = "<group>"; };
+		C79ADBD825BEFD2600B93D6A /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +104,13 @@
 			children = (
 				C79ADBA625BEEF6F00B93D6A /* AppDelegate.swift */,
 				C79ADBA825BEEF6F00B93D6A /* ViewController.swift */,
+				C79ADBD225BEF0A300B93D6A /* Renderer.swift */,
 				C79ADBAA25BEEF7000B93D6A /* Assets.xcassets */,
 				C79ADBAC25BEEF7000B93D6A /* Main.storyboard */,
 				C79ADBAF25BEEF7000B93D6A /* Info.plist */,
 				C79ADBB025BEEF7000B93D6A /* firstMetalApp.entitlements */,
+				C79ADBD625BEF81B00B93D6A /* Primitive.swift */,
+				C79ADBD825BEFD2600B93D6A /* Shaders.metal */,
 			);
 			path = firstMetalApp;
 			sourceTree = "<group>";
@@ -255,7 +264,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C79ADBA925BEEF6F00B93D6A /* ViewController.swift in Sources */,
+				C79ADBD325BEF0A300B93D6A /* Renderer.swift in Sources */,
 				C79ADBA725BEEF6F00B93D6A /* AppDelegate.swift in Sources */,
+				C79ADBD725BEF81B00B93D6A /* Primitive.swift in Sources */,
+				C79ADBD925BEFD2600B93D6A /* Shaders.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

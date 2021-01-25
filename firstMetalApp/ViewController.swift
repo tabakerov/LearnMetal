@@ -6,14 +6,20 @@
 //  Copyright © 2021 Dima. All rights reserved.
 //
 
-import Cocoa
+import MetalKit
 
 class ViewController: NSViewController {
+    
+    var renderer: Renderer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        guard let metalView = view as? MTKView else {
+            fatalError("metal view not set up in storyboard")
+        }
+        
+        renderer  = Renderer(metalView: metalView)
     }
 
     override var representedObject: Any? {
